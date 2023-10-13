@@ -4,7 +4,7 @@ import json
 from sys import argv
 def index(request):
     if(request.method == "POST"):
-        return JsonResponse({"message": parse_srt(request.POST.get("srt"))})
+        return JsonResponse({"message": parse_srt(request.POST.get("srt").replace("\r", ''))})
     else:
         return JsonResponse({"message": "You are using GET method"})
 
