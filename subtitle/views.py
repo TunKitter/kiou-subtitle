@@ -14,7 +14,7 @@ def parse_time(time_string):
     seconds = int(re.findall(r'\d+:\d+:(\d+),\d+', time_string)[0])
     milliseconds = int(re.findall(r'\d+:\d+:\d+,(\d+)', time_string)[0])
 
-    return (hours * 3600 + minutes * 60 + seconds) * 1000 + milliseconds
+    return (hours * 3600 + minutes * 60 + seconds)
 
 
 def parse_srt(srt_string):
