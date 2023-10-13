@@ -50,6 +50,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'KiouSubtitle.urls'
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 
 TEMPLATES = [
     {
